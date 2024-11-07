@@ -1,7 +1,7 @@
 package com.kivi;
 
 public class Stack<T> {
-    private LinkedList<T> list;
+    private final LinkedList<T> list;
 
     public Stack() {
         list = new LinkedList<>();
@@ -30,7 +30,7 @@ public class Stack<T> {
     public boolean isEmpty() {
         return list.size() == 0;
     }
-    
+
     public int size() {
         return list.size();
     }
